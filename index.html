@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>vue-demo</title>
+</head>
+<body>
+    <div id="app">
+        <h2>vue-demo</h2>
+        <p>
+            <label><input type="checkbox" v-model="selectAll"> 全选</label>
+        </p>
+        <p>
+            <template v-for="item in list">
+                <label style="margin-right: 10px;"><input type="checkbox" :value="item.val" v-model="selectNames"> {{ item.name }}</label>
+            </template>
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="demo.js"></script>
+</body>
+</html>
