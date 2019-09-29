@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>vue-demo</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/icheck@1.0.2/skins/square/_all.css">
+</head>
+<body>
+    <div id="app">
+        <h2>vue-demo</h2>
+        <p>
+            <label><input type="checkbox" class="icheck"> 全选</label>
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/icheck@1.0.2/icheck.min.js"></script>
+    <script>
+        $('.icheck').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+    </script>
+</body>
+</html>
